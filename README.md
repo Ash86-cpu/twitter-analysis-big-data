@@ -1,22 +1,26 @@
-# Image Encryption: Cryptographic Procedures to Ensure Data Security
+# Twitter Data Analysis Pipeline
 
-A thesis project implementing symmetric (Blowfish) and asymmetric (RSA) encryption for image security.
+![GitHub](https://img.shields.io/badge/Python-3.9%2B-blue)
+![GitHub](https://img.shields.io/badge/License-MIT-green)
+
+Scalable processing and analysis of Twitter data (15M+ tweets) with efficient memory management.
 
 ## Features
-- Blowfish encryption/decryption
-- RSA key generation and encryption/decryption
-- Memory profiling
+- Chunked JSON processing (handles 450GB+ archives)
+- Memory-optimized data handling
+- Temporal, spatial, and user behavior analysis
+- Modular pipeline architecture
 
-## Requirements
-- Python 3.x
-- `pycryptodome` library
-- `memory-profiler` library
-
-## Usage
-Run:
+## Quick Start
 ```bash
-python Finalimageencryptiondecryption.py
-=======
-# Image-Encryption-Thesis
-Thesis project on image encryption using cryptographic methods
->>>>>>> 9d14c812c3c66147cbe4e12570988b1628c09494
+# Clone repo
+git clone https://github.com/Ash86-cpu/twitter-analysis.git
+cd twitter-analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run processing (sample data)
+python -m data_processing.process_tweets \
+  --input data/raw/sample.zip \
+  --output data/processed/
