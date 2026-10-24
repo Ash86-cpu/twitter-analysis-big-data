@@ -1,10 +1,15 @@
-# Data
+# Data (generated or too large for git)
 /data/
 /processed/
+/outputs/
 
 # Environments
 .env
 venv/
+.venv/
+
+# Python
+__pycache__/
 
 # Jupyter
 .ipynb_checkpoints

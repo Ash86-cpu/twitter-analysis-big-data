@@ -1,8 +1,5 @@
 pandas>=1.4
-matplotlib>=3.5
+pyarrow>=8.0
 ijson>=3.1
 tqdm>=4.64
-pyarrow>=8.0  # For parquet
-python-snappy  # Compression
-geopandas>=0.11
-wordcloud>=1.8
+matplotlib>=3.5
